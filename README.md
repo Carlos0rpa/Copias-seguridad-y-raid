@@ -111,3 +111,65 @@ C:\Users\grupo4\Documents:
 - [f] otroFichero4.jpg
 ````   
 ## 2. Sistema RAID Windows
+
+1. El primer paso sería añadirle un nuevo disco virtual a nuestra máquina con Windows 11
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/tipo_disco.png).
+
+2. El siguiente sería escoger el tamaño del disco, en este caso añadiremos uno de 10 GB
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/seleccion_del_disco_de_10GB_vm.png).
+
+3. A continuación. Ya en nuestra máquina virtual, ponemos en línea nuestro nuevo disco virtual, dándole clic derecho sobre el mismo y clicando donde pone "en línea".
+
+4. Para crear un volumen simple, le damos clic derecho sobre nuestro disco sin formato, le damos un formato (NTFS, FAT32, FAT, ReFS) y un nombre para el volumen.
+
+
+# Creación de un volumen distribuido.
+
+1. Para la creación de este volumen, reduciremos el tamaño de nuestro disco principal en 1024 MB y de nuestro disco virtual 2048 MB (ambos sin formato).
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/vol_distr.png)
+
+2. Al volumen al que le hayamos dado clic para iniciar el proceso de creación del volumen distribuido, le añadiremos el volumen restante, en nuestro caso, al de 1 GB le añadiremos el de 2 GB.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/2_gb_mas.png)
+
+3. Al igual que hicimos con el volumen simple, le daremos un formato (en este caso y en los siguientes NTFS) y un nombre para el volumen.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/formato_nombre.png)
+
+4. Así es como quedaría una vez finalizado, nuestro particionado con volúmenes distribuidos.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/distr.png)
+
+
+# Creación de un volumen seccionado
+
+Para la creación de este volumen sería exactamente lo mismo que en el anterior caso, simplemente los cambios son, que los discos tienen ambos 4 GB.
+
+1. Clic derecho en el disco que le queramos crear el tipo de volumen seccionado.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/vol_secc_4gb.png)
+
+2. Le damos formato y nombre al volumen y finalmente nuestro volumen seccionado aparecería de la siguiente manera.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/vol_secc.png)
+
+
+# Creación de un volumen reflejado
+
+Para este volumen necesitaremos otras dos secciones de disco (una por cada uno) de 4 GB de almacenamiento, sin formato.
+
+1. El primer paso sería darle clic derecho sobre uno de los discos y seleccionar la opción de "Nuevo volumen refeljado".
+
+2. El siguiente paso sería darle formato y nombre al volumen, como hicimos en los anteriores dos apartados.
+
+La información del volumen sería la siguiente.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/Info_refl.png)
+
+3. Y finalmente así es como quedaría el gestor de discos con estes volúmenes reflejados.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/vol_refl.png)
+
+````
