@@ -41,8 +41,8 @@ C:\Users\grupo4\Documents:
     - [f] ficheroLog2.txt
     - [f] ficheroLog3.txt   
     - [f] ficheroLog4.txt
-- [f] fichero1.txt
-- [f] fichero2.txt
+- [f] fichero1.txt [ERROR]
+- [f] fichero2.txt [ERROR]
 - [f] fichero3.pdf
 - [f] fichero4.txt
 - [f] fichero5.txt
@@ -110,4 +110,4 @@ C:\Users\grupo4\Documents:
 - [f] otroFichero3.jpg
 - [f] otroFichero4.jpg
 ````   
-## Sistema RAID Windows
+## 2. Sistema RAID Windows
