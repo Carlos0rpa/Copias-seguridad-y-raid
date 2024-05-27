@@ -128,19 +128,19 @@ C:\Users\grupo4\Documents:
 
 1. Para la creación de este volumen, reduciremos el tamaño de nuestro disco principal en 1024 MB y de nuestro disco virtual 2048 MB (ambos sin formato).
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/vol_distr.png)
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_distr.png)
 
 2. Al volumen al que le hayamos dado clic para iniciar el proceso de creación del volumen distribuido, le añadiremos el volumen restante, en nuestro caso, al de 1 GB le añadiremos el de 2 GB.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/2_gb_mas.png)
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/2_gb_mas.png)
 
 3. Al igual que hicimos con el volumen simple, le daremos un formato (en este caso y en los siguientes NTFS) y un nombre para el volumen.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/formato_nombre.png)
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/formato_nombre.png)
 
 4. Así es como quedaría una vez finalizado, nuestro particionado con volúmenes distribuidos.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/distr.png)
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/distr.png)
 
 
 # Creación de un volumen seccionado
@@ -149,11 +149,11 @@ Para la creación de este volumen sería exactamente lo mismo que en el anterior
 
 1. Clic derecho en el disco que le queramos crear el tipo de volumen seccionado.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/vol_secc_4gb.png)
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_secc_4gb.png)
 
 2. Le damos formato y nombre al volumen y finalmente nuestro volumen seccionado aparecería de la siguiente manera.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/vol_secc.png)
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_secc.png)
 
 
 # Creación de un volumen reflejado
@@ -166,10 +166,10 @@ Para este volumen necesitaremos otras dos secciones de disco (una por cada uno) 
 
 La información del volumen sería la siguiente.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/Info_refl.png)
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/Info_refl.png)
 
 3. Y finalmente así es como quedaría el gestor de discos con estes volúmenes reflejados.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.w/blob/main/vol_refl.png)
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_refl.png)
 
 ````
