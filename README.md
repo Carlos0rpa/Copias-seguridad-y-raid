@@ -32,3 +32,7 @@ Para poner a prueba nuestra política de copias de seguridad haremos lo siguient
   
 Cuando llegamos el viernes para solucionar los problemas nos encontramos con las siguientes copias de seguridad hechas:
 ![image](https://github.com/regueiroangel/UD7/assets/111371837/2f0e9254-183a-4673-a191-addb4b8c3114)
+
+Para restaurar esto haremos lo siguiente:  
+
+
