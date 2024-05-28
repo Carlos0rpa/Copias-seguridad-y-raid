@@ -172,4 +172,35 @@ La información del volumen sería la siguiente.
 
 ![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_refl.png)
 
+## 3. Sistema RAID Ubuntu
+Para crear un sistema raid en ubuntu utilizaremos la erramienta mdadm, para instalarla utilizaremos el siguiente comando:
 ````
+sudo apt-get install mdadm
+````
+Una vez instalado comenzaremos a crear las RAID
+### RAID 0 
+Usaremos 2 discos para el RAID 0, para conseguirlo en Ubuntu usaremos los comandos de mdadm instaldo previamente. Para ello usaremos el comando 
+````
+sudo mdadm --create /dev/md0 --level=0 --raid-devices=2 /dev/sdb /dev/sdc
+````
+> [!WARNING]
+> Tanto en este como en los siguiente apartados /dev/sdX, "X" elige el disco en cuestión.
+  
+Y nos da el siguiente resultado  
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/raid0.png)
+### RAID 1
+Volvemos a usar dos discos, el comando necesario para crearlo es el siguiente:
+````
+sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdc /dev/sdd
+````
+### RAID 5
+Usando de nuevo dos discos usamos el siguiente comando:
+````
+sudo mdad-create /dev/md0 --level=5 --raid-devices=2 /dev/sdb /dev/sdd
+````
+### TABLA COMPORTAMIENTO
+| Tipo RAID    | Discos Necesarios | Espacio Disponible                     | Tolerancia al Fallo          | Rendimiento                                                             |
+|--------------|-------------------|----------------------------------------|------------------------------|-------------------------------------------------------------------------|
+| **RAID 0**   | 2                 | Total a la sunma de los discos (20GB) | Ninguna, no admite fallo                      |  Aumentado tanto en lectura como en escritura        |
+| **RAID 1**   | 2                 | Como son ambos discos de 10GB solo tendremos disponible 10GB | Admite fallo de 1 disco | Lectura mejorada y escritura ni mejora ni pérdida. |
+| **RAID 5**   | 3                 | (N-1) * GB Discos ((3-1) * 10 = 20GB) | Admite fallo de 1 disco | Mejora de lectura y pérdida de escritura por la paridad. |
