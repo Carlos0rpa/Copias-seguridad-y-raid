@@ -124,7 +124,7 @@ C:\Users\grupo4\Documents:
 4. Para crear un volumen simple, le damos clic derecho sobre nuestro disco sin formato, le damos un formato (NTFS, FAT32, FAT, ReFS) y un nombre para el volumen.
 
 
-# Creación de un volumen distribuido.
+### Creación de un volumen distribuido.
 
 1. Para la creación de este volumen, reduciremos el tamaño de nuestro disco principal en 1024 MB y de nuestro disco virtual 2048 MB (ambos sin formato).
 
@@ -143,7 +143,7 @@ C:\Users\grupo4\Documents:
 ![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/distr.png)
 
 
-# Creación de un volumen seccionado
+### Creación de un volumen seccionado
 
 Para la creación de este volumen sería exactamente lo mismo que en el anterior caso, simplemente los cambios son, que los discos tienen ambos 4 GB.
 
@@ -156,7 +156,7 @@ Para la creación de este volumen sería exactamente lo mismo que en el anterior
 ![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_secc.png)
 
 
-# Creación de un volumen reflejado
+### Creación de un volumen reflejado
 
 Para este volumen necesitaremos otras dos secciones de disco (una por cada uno) de 4 GB de almacenamiento, sin formato.
 
