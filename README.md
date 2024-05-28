@@ -10,8 +10,8 @@ C:\Users\grupo4\Documents:
 - [f] fichero1.pdf
 - [f] fichero1.txt
 - [f] fichero2.txt
-- [f] otroFichero1.jpg
-- [f] otroFichero2.jpg
+- [f] otroFichero1.jepg
+- [f] otroFichero2.jepg
 `````
 Una vez establecido el sistema de ficheros que usaremos pasamos a diseñar la política de copias de seguridad **diarias**. Hemos decido usar un ciclo de backups de **1 full + 6 increments**. Se harán todos los días a las 5:30 
 hora española empezando el día 26/05/2024. Hemos decidido usar este sitema de copias de seguridad ya que así gestionamos el espacio de la mejor manera, todos los domingos se hará una copia de seguridad completa mientras que el resto de días de la semana
@@ -46,9 +46,9 @@ C:\Users\grupo4\Documents:
 - [f] fichero3.pdf
 - [f] fichero4.txt
 - [f] fichero5.txt
-- [f] otroFichero2.jpg
-- [f] otroFichero3.jpg
-- [f] otroFichero4.jpg
+- [f] otroFichero2.jepg
+- [f] otroFichero3.jepg
+- [f] otroFichero4.jepg
 ````
 
 Para restaurar esto haremos lo siguiente:  
@@ -67,10 +67,10 @@ C:\Users\grupo4\Documents:
 - [f] fichero3.pdf
 - [f] fichero4.txt
 - [f] fichero5.txt
-- [f] otroFichero1.jpg
-- [f] otroFichero2.jpg
-- [f] otroFichero3.jpg
-- [f] otroFichero4.jpg
+- [f] otroFichero1.jepg
+- [f] otroFichero2.jepg
+- [f] otroFichero3.jepg
+- [f] otroFichero4.jepg
 ````
 2. La restauración del martes es redundante ya que, el fichero5.txt lo tenemos ya y el fichero1.pdf lo podemos recuperar con la copia de seguridad del lunes. Restauramos la copia del lunes y recuperaremos el fichero1.pdf
 ````
@@ -86,10 +86,10 @@ C:\Users\grupo4\Documents:
 - [f] fichero3.pdf
 - [f] fichero4.txt
 - [f] fichero5.txt
-- [f] otroFichero1.jpg
-- [f] otroFichero2.jpg
-- [f] otroFichero3.jpg
-- [f] otroFichero4.jpg
+- [f] otroFichero1.jepg
+- [f] otroFichero2.jepg
+- [f] otroFichero3.jepg
+- [f] otroFichero4.jepg
 ````
 3. Por último restauramos la copia de seguridad completa para volver a tener los archivos fichero1.txt y fichero2.txt sin errores.
 ````
@@ -105,10 +105,10 @@ C:\Users\grupo4\Documents:
 - [f] fichero3.pdf
 - [f] fichero4.txt
 - [f] fichero5.txt
-- [f] otroFichero1.jpg
-- [f] otroFichero2.jpg
-- [f] otroFichero3.jpg
-- [f] otroFichero4.jpg
+- [f] otroFichero1.jepg
+- [f] otroFichero2.jepg
+- [f] otroFichero3.jepg
+- [f] otroFichero4.jepg
 ````   
 ## 2. Sistema RAID Windows
 
