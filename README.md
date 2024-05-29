@@ -201,6 +201,6 @@ sudo mdad-create /dev/md0 --level=5 --raid-devices=2 /dev/sdb /dev/sdd
 ### TABLA COMPORTAMIENTO
 | Tipo RAID    | Discos Necesarios | Espacio Disponible                     | Tolerancia al Fallo          | Rendimiento                                                             |
 |--------------|-------------------|----------------------------------------|------------------------------|-------------------------------------------------------------------------|
-| **RAID 0**   | 2                 | Total a la sunma de los discos (20GB) | Ninguna, no admite fallo                      |  Aumentado tanto en lectura como en escritura        |
-| **RAID 1**   | 2                 | Como son ambos discos de 10GB solo tendremos disponible 10GB | Admite fallo de 1 disco | Lectura mejorada y escritura ni mejora ni pérdida. |
-| **RAID 5**   | 3                 | (N-1) * GB Discos ((3-1) * 10 = 20GB) | Admite fallo de 1 disco | Mejora de lectura y pérdida de escritura por la paridad. |
+| **RAID 0**   | 2                 | Total a la suma de los discos (20GB)   | Ninguna, no admite fallo                      |  Aumentado tanto en lectura como en escritura          |
+| **RAID 1**   | 2                 | Como son ambos discos de 10GB solo tendremos disponible 10GB | Admite fallo de 1 disco | Lectura mejorada y escritura ni mejora ni pérdida.     |
+| **RAID 5**   | 3                 | (N-1) * GB Discos ((3-1) * 10 = 20GB)  | Admite fallo de 1 disco | Mejora de lectura y pérdida de escritura por la paridad.                     |
