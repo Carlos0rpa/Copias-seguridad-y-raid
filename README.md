@@ -31,6 +31,7 @@ Para poner a prueba nuestra política de copias de seguridad haremos lo siguient
 5. Jueves borramos erróneamente otroFichero1.jpg y creamos ficheroLog3.txt y ficheroLog4.txt
   
 Cuando llegamos el viernes para solucionar los problemas nos encontramos con las siguientes copias de seguridad hechas:
+
 ![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/8.png)
 
 En este punto contamos con la siguiente estructura de ficheros:
@@ -173,7 +174,7 @@ La información del volumen sería la siguiente.
 ![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_refl.png)
 
 ## 3. Sistema RAID Ubuntu
-Para crear un sistema raid en ubuntu utilizaremos la erramienta mdadm, para instalarla utilizaremos el siguiente comando:
+Para crear un sistema raid en ubuntu utilizaremos la herramienta mdadm, para instalarla utilizaremos el siguiente comando:
 ````
 sudo apt-get install mdadm
 ````
@@ -196,7 +197,7 @@ sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdc /dev/sdd
 ### RAID 5
 Usando de nuevo dos discos usamos el siguiente comando:
 ````
-sudo mdad-create /dev/md0 --level=5 --raid-devices=2 /dev/sdb /dev/sdd
+sudo mdad-create /dev/md0 --level=5 --raid-devices=3 /dev/sdb /dev/sdd
 ````
 ### TABLA COMPORTAMIENTO
 | Tipo RAID    | Discos Necesarios | Espacio Disponible                     | Tolerancia al Fallo          | Rendimiento                                                             |
