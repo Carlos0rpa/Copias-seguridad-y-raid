@@ -14,7 +14,7 @@ C:\Users\grupo4\Documents:
 - [f] otroFichero2.jpeg
 `````
 Una vez establecido el sistema de ficheros que usaremos pasamos a diseñar la política de copias de seguridad **diarias**. Hemos decido usar un ciclo de backups de **1 full + 6 increments**. Se harán todos los días a las 5:30 
-hora española empezando el día 26/05/2024. Hemos decidido usar este sitema de copias de seguridad ya que así gestionamos el espacio de la mejor manera, todos los domingos se hará una copia de seguridad completa mientras que el resto de días de la semana
+hora española empezando el día 26/05/2024. Hemos decidido usar este sistema de copias de seguridad ya que así gestionamos el espacio de la mejor manera, todos los domingos se hará una copia de seguridad completa mientras que el resto de días de la semana
 crearán una copia de seguridad incremental, lo que quiere decir que solo harán copia de lo que haya sido modificado desde la última copia de seguridad incremental o, en su defecto, completa.
   
 Foto de como queda en el programa:  
